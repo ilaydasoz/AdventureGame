@@ -8,9 +8,11 @@ public class Player {
     private int money;
     private String characterName;
     private String name;
+    private Inventory inventory;
 
     public Player(String name) {
         this.name = name;
+        this.inventory = new Inventory();
     }
 
     public void selectChar(){
@@ -44,6 +46,11 @@ public class Player {
         initPlayer(new Samurai());
     }
 
+    /* System.out.println("Character: " + this.getCharacterName() +
+    ", Damage: " + this.getDamage() +
+    ", Health: " + this.getHealth() +
+    ". Money: " + this.getMoney()); */
+
 }
 
     public void initPlayer(GameChar gameChar){
@@ -52,9 +59,16 @@ public class Player {
         this.setHealth(gameChar.getHealth());
         this.setMoney(gameChar.getMoney());
     }
+
+    public void printInfo(){
+        System.out.println("Weapon: " + this.getInventory().getWeapon().getName() +
+        " Damage: " + this.getDamage() +
+        " Health: " + this.getHealth() +
+        " Money: " + this.getMoney());
+    }
     
     public int getDamage() {
-        return damage;
+        return damage + this.getInventory().getWeapon().getDamage();
     }
 
     public void setDamage(int damage) {
@@ -99,6 +113,14 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 
 
