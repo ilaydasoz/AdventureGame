@@ -20,6 +20,9 @@ public class Game {
             System.out.println("Areas: ");
             System.out.println("1 - Safe House");
             System.out.println("2 - Tool Store");
+            System.out.println("3 - Cave");
+            System.out.println("4 - Forest");
+            System.out.println("5 - River");
             System.out.println("Press 0 to exit game");
             System.out.print("Please select the area you want to go: ");
             int selectLoc = input.nextInt();
@@ -37,8 +40,21 @@ public class Game {
                 location = new ToolStore(player);
                 break;
 
+                case 3:
+                location = new Cave(player);
+                break;
+
+                case 4:
+                location = new Forest(player);
+                break;
+
+                case 5:
+                location = new River(player);
+                break;
+
                 default:
-                location = new SafeHouse(player);
+                System.out.println("Invalid choice!");
+                break;
             }
 
             if (location == null){
