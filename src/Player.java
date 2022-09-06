@@ -64,13 +64,17 @@ public class Player {
         System.out.println("Weapon: " + this.getInventory().getWeapon().getName() +
         " Armor: " + this.getInventory().getArmor().getName() +
         " Block Capacity: " + getInventory().getArmor().getBlock() +
-        " Damage: " + this.getDamage() +
+        " Damage: " + this.getTotalDamage() +
         " Health: " + this.getHealth() +
         " Money: " + this.getMoney());
     }
     
+    public int getTotalDamage() {
+        return damage + this.getInventory().getWeapon().getDamage(); 
+    }
+
     public int getDamage() {
-        return damage + this.getInventory().getWeapon().getDamage();
+        return damage;
     }
 
     public void setDamage(int damage) {
