@@ -2,7 +2,7 @@
 
 This is a text based Adventure Game developed using object oriented programming principles during Java102 Bootcamp by PatikaDev.
 
-### Characters;
+### Characters
 
 | Character | Id | Damage  | Health  | Money  |
 |:---------:|:--:|:-------:|:-------:|:------:|
@@ -10,7 +10,7 @@ This is a text based Adventure Game developed using object oriented programming 
 | Archer    | 2  | 7       | 18      | 20     |
 | Knight    | 3  | 8       | 24      | 5      |
 
-### Obstacles;
+### Obstacles
 
 | Obstacle | Id | Damage  | Health  | Money  |
 |:-------:|:--:|:-------:|:-------:|:------:|
@@ -19,15 +19,15 @@ This is a text based Adventure Game developed using object oriented programming 
 | Bear    | 3  | 7       | 20      | 12     |
 | Snake   | 4  | Random  | 12      | 0      |
 
-### Places;
-- Safe House
-  - A safe place that you can refill your health.
-- Cave
-  - Zombies live here.
-  - Item: Food (Food)
-- Forest
-  - Vampires live here.
-  - Item: Wood (Firewood)
-- River
-  - Bears live here.
-  - Item: Water (Water)
+### Places
+## Safe House
+  A safe place that you can refill your health.
+## Cave
+  Zombies live here.
+  Item: Food (Food)
+## Forest
+  Vampires live here.
+  Item: Wood (Firewood)
+## River
+  Bears live here.
+  Item: Water (Water)
