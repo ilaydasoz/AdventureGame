@@ -19,15 +19,11 @@ This is a text based Adventure Game developed using object oriented programming 
 | Bear    | 3  | 7       | 20      | 12     |
 | Snake   | 4  | Random  | 12      | 0      |
 
-### Places
-# Safe House
-  A safe place that you can refill your health.
-# Cave
-  Zombies live here.
-  Item: Food (Food)
-# Forest
-  Vampires live here.
-  Item: Wood (Firewood)
-# River
-  Bears live here.
-  Item: Water (Water)
+### Locations
+
+|  Location   |       Feature      |   Item   |
+|:-----------:|:------------------:|:--------:| 
+| Safe House  | Health is refilled.| None     |
+| Cave        | Zombies live here. | Food     |
+| Forest      | Vampires live here.| Firewood |
+| River       | Bears live here.   | Water    |
