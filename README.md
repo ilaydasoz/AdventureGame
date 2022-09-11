@@ -20,14 +20,14 @@ This is a text based Adventure Game developed using object oriented programming 
 | Snake   | 4  | Random  | 12      | 0      |
 
 ### Places
-## Safe House
+# Safe House
   A safe place that you can refill your health.
-## Cave
+# Cave
   Zombies live here.
   Item: Food (Food)
-## Forest
+# Forest
   Vampires live here.
   Item: Wood (Firewood)
-## River
+# River
   Bears live here.
   Item: Water (Water)
